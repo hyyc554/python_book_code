@@ -1,4 +1,5 @@
 import collections
+
 Card = collections.namedtuple('Card', ['rank', 'suit'])
 
 
@@ -16,5 +17,12 @@ class FrenchDeck:
 	def __getitem__(self, position):
 		return self._cards[position]
 
-beer_card = Card('7','diamonds')
-print(beer_card)
+
+beer_card = Card('7', 'diamonds')
+# print(beer_card)
+deck = FrenchDeck()
+# print(len(deck))
+# print(FrenchDeck.ranks)
+print(deck[2])
+for card in deck:
+	print(card)
