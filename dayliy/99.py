@@ -4,14 +4,11 @@
 @Author    : Young
 @Email     : hyc554@outlook.com
 @site      : http://www.cnblogs.com/huang-yc/
-@File      : 5.5.py
+@File      : 99.py
 @version   : 1.0
-@Time      : 2019/1/27 19:44
+@Time      : 2019/1/31 20:59
 Description about this file:
 
 """
 
-def clean_counters(conn):
-    pipe = conn.pipeline(True)
-
-
+print('\n'.join(['\t'.join(["%2s*%2s=%2s" % (j, i, i * j) for j in range(1, i + 1)]) for i in range(1, 10)]))
