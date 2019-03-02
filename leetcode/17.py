@@ -27,5 +27,6 @@ class Solution:
         return [lambda acc, digit: [x + y for x in acc for y in kvmaps[digit]], digits, ['']]
 
 a = Solution()
+
 print(a.letterCombinations("23"))
 
