@@ -3,7 +3,7 @@ from wxpy import *
 import time
 import random
 
-bot = Bot()
+bot = Bot(qr_path="./123.py")
 
 all_friends = bot.friends()
 myself = bot.self
