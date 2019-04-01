@@ -40,12 +40,11 @@ def mergeTwoLists(l1, l2):
         if l2 is None:
             return head
         # 假如l2节点属于在l1的当前节点与下一个节点值之间
-        if l2.val >= l1.val and l2.val <= l1.next.val:
+        if l1.val <= l2.val <= l1.next.val:
             # 在这一步我们通过设置l1.next\l2.next来拼接l2，并将L2 迭代
             l1.next, l2.next, l2 = l2, l1.next, l2.next
         # l1迭代向前
         l1 = l1.next
-    # any leftover l2 nodes are guaranteed to be larger than the last l1 node, so we add it to the end
     # 以防l2较长的情况，我们在l1迭代完成后把l2加入到l1尾部
     l1.next = l2
     return head
