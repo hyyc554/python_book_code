@@ -25,7 +25,7 @@ class Solution(object):
         queue.append((r, c))
         grid[r][c] = "0"
         while queue:
-            directions = [(0, 1), (0, -1), (-1, 0), (1, 0)]
+            directions = [(0, 1), (0, -1), (-1, 0), (1, 0)] # 方向键
             r, c = queue.popleft()
             for d in directions:
                 nr, nc = r + d[0], c + d[1]

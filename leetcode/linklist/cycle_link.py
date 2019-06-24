@@ -56,17 +56,17 @@ class Solution3(object):
     def reverse_list(self, head):
         before = after = None
         while head:
-            after = head.next # 保存当前节点的下一个节点
-            head.next = before # 将当前节点的下一题个节点替换为当前节点的上一个节点
-            before = head # 将上一个节点，往前移动，变为当前节点
-            head = after # 当前节点向前移动
-        return before # 返回反转完成后的头结点
+            after = head.next               # 保存当前节点的下一个节点
+            head.next = before              # 将当前节点的下一题个节点替换为当前节点的上一个节点
+            before = head                   # 将上一个节点，往前移动，变为当前节点
+            head = after                    # 当前节点向前移动
+        return before                       # 返回反转完成后的头结点
 
     def hasCycle(self, head):
         """
         :type head: ListNode
         :rtype: bool
         """
-        if head and head.next and head == self.reverse_list(head): # 加入反转后的头结点与原先的头结点相同，则说明有环
+        if head and head.next and head == self.reverse_list(head):      # 加入反转后的头结点与原先的头结点相同，则说明有环
             return True
         return False

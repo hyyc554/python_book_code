@@ -14,7 +14,6 @@ Description about this file:
 
 class Solution:
     def mySqrt(self, x):
-
         l = 1
         r = x
         while l <= r:
