@@ -1,4 +1,10 @@
 {
     "python.pythonPath": "C:\\Users\\Administrator\\envs\\dj11.7\\Scripts\\python.exe",
-    "python.linting.pylintEnabled": false
+    "python.linting.pylintEnabled": false,
+    "python.testing.pyTestArgs": [
+        "dayliy"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.pyTestEnabled": true
 }
